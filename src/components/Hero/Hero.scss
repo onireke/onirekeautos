@@ -1,0 +1,9 @@
+.hero-home {
+  .auto-description {
+    @apply max-w-[900px] w-full h-screen mx-auto text-center flex flex-col justify-center mt-[-80px];
+
+    .motivation {
+      @apply text-3xl md:text-6xl sm:text-5xl md:py-5 font-bold;
+    }
+  }
+}
