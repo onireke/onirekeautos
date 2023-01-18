@@ -1,9 +1,25 @@
 .hero-home {
+  background-image: url("hero-background1.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   .auto-description {
-    @apply max-w-[900px] w-full h-screen mx-auto text-center flex flex-col justify-center mt-[-80px];
+    @apply max-w-[900px] w-full h-screen  mx-auto text-center flex flex-col justify-center;
 
     .motivation {
       @apply text-3xl md:text-6xl sm:text-5xl md:py-5 font-bold;
+    }
+
+    .car-list {
+      @apply flex justify-center mb-6;
+    }
+
+    .catchy-word {
+      @apply text-gray-600 py-3 font-bold text-xl md:text-2xl;
+    }
+
+    .contact-button {
+      @apply bg-orange-700 w-[200px]  rounded rounded-md mx-auto my-5 p-3 font-medium text-white;
     }
   }
 }

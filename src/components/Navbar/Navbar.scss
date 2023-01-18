@@ -1,7 +1,7 @@
 .nav {
-  @apply text-white flex justify-between items-center p-4 mx-auto h-[96px] max-w-[1240px];
+  @apply text-black flex justify-between items-center p-4 mx-auto h-[96px] max-w-[1240px]  fixed w-full z-10 top-0;
   .auto-name {
-    @apply w-full text-3xl text-lime-500 font-bold;
+    @apply w-full text-3xl text-orange-700 font-bold;
   }
   .nav-rights {
     @apply hidden md:flex;

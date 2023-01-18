@@ -24,7 +24,7 @@ function Navbar() {
         <div
           className={
             !navbar
-              ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-black m-4 pt-4 ease-in-out duration-700"
+              ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-white m-4 pt-4 ease-in-out duration-700"
               : "fixed left-[-100%]"
           }
         >
