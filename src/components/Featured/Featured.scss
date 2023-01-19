@@ -1,0 +1,7 @@
+.featured-main {
+  @apply w-full  h-screen bg-[#B7CAFF] bg-cover flex items-center justify-center;
+
+  .featured-content {
+    @apply w-full bg-no-repeat bg-cover max-w-[1200px]  bg-center h-2/3 text-white rounded-2xl;
+  }
+}
