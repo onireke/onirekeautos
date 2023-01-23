@@ -1,0 +1,35 @@
+.footer {
+  @apply w-full  bg-zinc-100;
+}
+
+.Footer-main {
+  @apply max-w-[1240px] mx-auto grid lg:grid-cols-2 py-16 gap-8  mt-20;
+
+  .footer-left {
+    @apply flex flex-col gap-8;
+
+    .brand-name {
+      @apply w-full text-3xl text-orange-700 font-bold;
+    }
+
+    .socials {
+      @apply flex gap-8;
+    }
+  }
+
+  .footer-right {
+    @apply flex gap-16;
+
+    .footer-list {
+      .title {
+        @apply cursor-pointer uppercase;
+      }
+
+      .lists {
+        .list {
+          @apply cursor-pointer my-4;
+        }
+      }
+    }
+  }
+}
