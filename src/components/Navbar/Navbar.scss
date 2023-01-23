@@ -1,5 +1,5 @@
 .nav {
-  @apply text-black flex justify-between items-center p-4 mx-auto h-[96px] max-w-[1240px]  fixed w-full z-10 top-0;
+  @apply text-black flex justify-between items-center p-4 mx-auto h-[96px] px-[10rem]  fixed w-full z-10 top-0;
   .auto-name {
     @apply w-full text-3xl text-orange-700 font-bold;
   }
@@ -7,6 +7,6 @@
     @apply hidden md:flex;
   }
   .nav-right {
-    @apply p-4;
+    @apply m-4 cursor-pointer;
   }
 }

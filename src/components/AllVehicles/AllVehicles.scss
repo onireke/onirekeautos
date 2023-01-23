@@ -1,0 +1,15 @@
+.allvehicles-main {
+  @apply max-w-none;
+}
+
+.cards {
+  @apply flex  gap-7 min-w-max px-[4rem] overflow-x-scroll;
+
+  .card {
+    @apply flex  h-[20rem]  rounded-2xl;
+
+    .info {
+      @apply bg-emerald-900 text-white flex flex-col rounded-r-2xl py-8 px-4;
+    }
+  }
+}

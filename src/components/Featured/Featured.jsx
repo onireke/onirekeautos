@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import { IoChevronBack } from "react-icons/io5";
+import { IoChevronForward } from "react-icons/io5";
+import { RxDot } from "react-icons/rx";
+
 import "./Featured.scss";
 
 function Featured() {
@@ -32,13 +36,43 @@ function Featured() {
       image: "secondpage-image7.jpeg",
     },
   ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const prevSlide = () => {
+    const isFirstSlide = currentIndex === 0;
+    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
+  };
+
+  const nextSlide = () => {
+    const isLastSlide = currentIndex === slides.length - 1;
+    const newIndex = isLastSlide ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
+  };
   return (
     <div className="featured-main">
+      <div className="feature-description">
+        <h1 className="attract"> View of our gratest cars of all times</h1>
+        <h1 className="attract"></h1>
+      </div>
       <div
-        style={{ backgroundImage: `url(${slides[5].image})` }}
-        className="featured-content"
+        style={{ backgroundImage: `url(${slides[currentIndex].image})` }}
+        className="featured-content group"
       >
-        This is the div for the featured cars
+        <div className="arrow left-5  hidden group-hover:block">
+          <IoChevronBack size={30} onClick={prevSlide} />
+        </div>
+        <div className="arrow right-5 hidden group-hover:block">
+          <IoChevronForward size={30} onClick={nextSlide} />
+        </div>
+        <div className="dot">
+          {slides.map((slide, slideIndex) => (
+            <div>
+              <RxDot />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -1,7 +1,19 @@
 .featured-main {
-  @apply w-full  h-screen bg-[#B7CAFF] bg-cover flex items-center justify-center;
+  @apply w-full  h-screen  bg-cover flex flex-col items-center justify-center;
+
+  .attract {
+    @apply text-[4rem] mb-4;
+  }
 
   .featured-content {
-    @apply w-full bg-no-repeat bg-cover max-w-[1200px]  bg-center h-2/3 text-white rounded-2xl;
+    @apply relative w-full bg-no-repeat bg-cover max-w-[1200px]  bg-center h-2/3 text-white rounded-2xl flex justify-center;
+
+    .arrow {
+      @apply absolute top-[40%] rounded-full text-white p-2 bg-black -translate-x-0 -translate-y-[-50%] text-2xl cursor-pointer hidden;
+    }
+
+    .dot {
+      @apply flex justify-center top-[95%] absolute items-center;
+    }
   }
 }
