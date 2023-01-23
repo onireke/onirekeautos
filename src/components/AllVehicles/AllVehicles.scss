@@ -1,9 +1,9 @@
 .allvehicles-main {
-  @apply max-w-none;
+  @apply max-w-none overflow-x-scroll;
 }
 
 .cards {
-  @apply flex  gap-7 min-w-max px-[4rem] overflow-x-scroll;
+  @apply flex  gap-7 min-w-max px-[4rem];
 
   .card {
     @apply flex  h-[20rem]  rounded-2xl;

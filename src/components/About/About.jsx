@@ -3,11 +3,12 @@ import "./About.scss";
 
 function About() {
   return (
-    <div className="about">
-      <div className="about-desc">
+    <div className="main h-[35rem] ">
+      <div className="about-description">
         <p className="word">Discover the possibilities</p>
-        <button className="about-button">See What We are About</button>
       </div>
+
+      <button className="about-button">See What we are About</button>
     </div>
   );
 }
