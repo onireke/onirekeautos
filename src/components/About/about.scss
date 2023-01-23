@@ -1,0 +1,11 @@
+.about {
+  @apply h-screen;
+}
+
+.about-desc {
+  background-image: url("about-image.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @apply;
+}
