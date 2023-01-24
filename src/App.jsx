@@ -5,6 +5,7 @@ import Featured from "./components/Featured/Featured";
 import AllVehicles from "./components/AllVehicles/AllVehicles";
 import About from "./components/About/About";
 import Footer from "./components/Footer/Footer";
+import ElectricCar from "./components/ElectricCar/ElectricCar";
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
       <Featured />
       <AllVehicles />
       <About />
+      <ElectricCar />
+
       <Footer />
     </div>
   );

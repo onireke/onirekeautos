@@ -1,0 +1,27 @@
+.electric-car {
+  @apply bg-slate-800 w-full h-screen flex flex-col justify-center items-center gap-4;
+
+  .electric-words {
+    @apply flex justify-center items-center flex-col gap-3 max-w-[18rem] mt-[-3rem] mb-[-2rem] text-white;
+
+    .tittle {
+      @apply text-xl font-light;
+    }
+
+    .word {
+      @apply font-semibold text-3xl;
+    }
+
+    .electric-button {
+      @apply bg-white text-black w-32 h-10 rounded-3xl;
+    }
+  }
+
+  .cars {
+    @apply max-w-[1240px];
+
+    .cars-image {
+      // @apply w-3/5 h-32;
+    }
+  }
+}

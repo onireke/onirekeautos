@@ -6,10 +6,10 @@
   @apply mt-12 flex flex-col justify-center items-center gap-[24rem] text-white;
 
   .word {
-    @apply mt-[-3rem] text-3xl;
+    @apply mt-[-2rem] text-3xl;
   }
 
   .about-button {
-    @apply bg-white text-black h-[3rem] w-[15rem] rounded-3xl text-sm mt-[1rem] ml-[1rem];
+    @apply bg-white text-black h-[3rem] w-[15rem] rounded-3xl text-sm mt-[2.5rem] ml-[2.5rem];
   }
 }
