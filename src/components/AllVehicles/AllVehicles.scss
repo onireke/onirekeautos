@@ -1,12 +1,12 @@
 .allvehicles-main {
-  @apply max-w-none overflow-x-scroll;
+  @apply max-w-none overflow-x-scroll flex flex-col mb-[8rem];
 }
 
 .cards {
   @apply flex  gap-7 min-w-max px-[4rem];
 
   .card {
-    @apply flex  h-[20rem]  rounded-2xl;
+    @apply flex  h-[20rem]  rounded-2xl shadow-xl hover:scale-105 duration-300;
 
     .info {
       @apply bg-emerald-900 text-white flex flex-col rounded-r-2xl py-8 px-4;

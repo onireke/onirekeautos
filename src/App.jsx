@@ -6,11 +6,13 @@ import AllVehicles from "./components/AllVehicles/AllVehicles";
 import About from "./components/About/About";
 import Footer from "./components/Footer/Footer";
 import ElectricCar from "./components/ElectricCar/ElectricCar";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div>
       <Navbar />
+
       <Hero />
       <Featured />
       <AllVehicles />

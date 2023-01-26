@@ -50,6 +50,10 @@ function Featured() {
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
   };
+
+  const goToSlide = (slideIndex) => {
+    setCurrentIndex(slideIndex);
+  };
   return (
     <div className="featured-main">
       <div className="feature-description">
@@ -68,7 +72,7 @@ function Featured() {
         </div>
         <div className="dot">
           {slides.map((slide, slideIndex) => (
-            <div>
+            <div key={slide} onClick={() => goToSlide(slideIndex)}>
               <RxDot />
             </div>
           ))}

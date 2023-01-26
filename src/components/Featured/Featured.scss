@@ -2,7 +2,7 @@
   @apply w-full  h-screen  bg-cover flex flex-col items-center justify-center;
 
   .attract {
-    @apply text-[4rem] mb-4;
+    @apply text-3xl md:text-6xl sm:text-5xl mb-4;
   }
 
   .featured-content {
